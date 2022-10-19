@@ -1,2 +1,1 @@
-# novatec-vsp
-🏫 Vacational School Presentation of the Novatec Consulting GmbH
+#  Vacational School Presentation of the Novatec
