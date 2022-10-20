@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discord Chat
+    url: https://discord.com/invite/t9frQmmqPe
+    about: Ask questions and discuss with other developers in real time.
+  - name: Questions & Discussions
+    url: https://github.com/nicokempe/novatec-vsp/discussions
+    about: Use GitHub discussions for message-board style questions and discussions.
+  - name: Email contact
+    url: mailto:kontakt@nicokempe.de
+    about: If the other contact options are not enough you can contact me using emails.
