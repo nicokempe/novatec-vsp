@@ -1,0 +1,56 @@
+name: "Bug report"
+description: Create a report to help me improve
+labels: [":fire: bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Before you start:**
+
+        This form is only for submitting bug reports. If you have a usage question
+        or are unsure if this is really a bug, make sure to:
+
+        - Ask on my [Discord Server](https://discord.com/invite/t9frQmmqPe)
+        - Ask on the [GitHub Discussions](https://github.com/nicokempe/novatec-vsp/discussions)
+
+        Also try to search for your issue - it may have already been answered or even fixed in some branch.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+    placeholder: v2022.10.1
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: |
+        Describe as detailed as possible to reproduce your bug.
+      placeholder: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What is expected?
+    validations:
+      required: true
+  - type: textarea
+    id: actually-happening
+    attributes:
+      label: What is actually happening?
+    validations:
+      required: true
+  - type: textarea
+    id: system-info
+    attributes:
+      label: System Info
+      description: Output of `npx envinfo --system --npmPackages vue --binaries --browsers`
+      render: shell
+      placeholder: System, Binaries, Browsers
+  - type: textarea
+    id: additional-comments
+    attributes:
+      label: Any additional comments?
+      description: e.g. some background/context of how you ran into this bug.
