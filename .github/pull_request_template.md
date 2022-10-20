@@ -4,7 +4,7 @@
 * Add ...
 * Fix ...
 
-* **Please check if the Pull Request fulfills these requirements:**
+**Please check if the Pull Request fulfills these requirements:**
 - [ ] The commit message follows the guidelines
 - [ ] Tests for the changes have been made
 - [ ] Docs have been checked and if needed updated
