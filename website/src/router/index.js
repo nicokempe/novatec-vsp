@@ -28,6 +28,13 @@ const routes = [
     }
   },
   {
+    path: '/contact',
+    name: 'contact',
+    component: function () {
+      return import('../views/ContactView.vue')
+    }
+  },
+  {
     path: '/career',
     name: 'career',
     component: function () {
