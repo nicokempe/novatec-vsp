@@ -8,8 +8,8 @@
           <p class="mt-2 text-base text-gray-500">Sorry, we couldn’t find the page you’re looking for.</p>
           <div class="mt-6">
             <RouterLink to="/home" class="text-base font-medium text-cyan-600 hover:text-cyan-500">
+              <span aria-hidden="true"> &larr;</span>
               Back to the homepage
-              <span aria-hidden="true"> &rarr;</span>
             </RouterLink>
           </div>
         </div>
