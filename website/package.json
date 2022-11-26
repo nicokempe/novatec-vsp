@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "v2022.10.1-dev",
+  "version": "v2022.11.1-dev",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -10,6 +10,8 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.3",
     "@heroicons/vue": "^2.0.12",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "github:tailwindcss/typography",
     "vue": "^3.2.13",
     "vue-i18n": "^9.1.0",
     "vue-router": "^4.0.3"
