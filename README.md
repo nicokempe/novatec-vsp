@@ -1,4 +1,4 @@
-#  Vacational School Presentation of the Novatec
+#  Vocational School Presentation of the Novatec
 As part of my project work at Gottlieb Daimler School 2 (Technical School Center), we were given the task of presenting our training company in the form of a web presence.
 In order to fully exploit the possibilities of a web presence in the form of forms, we also had to include elements that could be displayed in exactly the same way on the company's website. (For example, an application form or similar).
 
