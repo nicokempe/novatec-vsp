@@ -4,20 +4,67 @@ In order to fully exploit the possibilities of a web presence in the form of for
 
 ## Table of Contents
 * Features
+* Upcoming Features
+* Installation guide
 * Credits
 
-## Features (WIP)
-* Responsive design
-* Multi language system
-* Dark and Light theme
+## Features
+* Contact form
+* Management overview
+* Company references
+* Company site overview
+* Legal pages
+  * Imprint
+  * Privacy Policy (currently empty)
+  * Cookie Policy (currently empty)
+* Dynamic display of Novatec job advertisements
+
+## Upcoming Features
+* Site information
+  * Map view and directions
+  * (If available) Contact persons
+  * Pictures, media and further information on the locations
+* Job application system (WIP)
+* Multi language system (WIP)
+* Dark and Light theme (WIP)
+* Responsive bug fixes
+  * Video display on small devices
+  * Application system pagination on small devices
+  * Reference item amount on small devices
+
+## Installation guide
+
+### Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Credits
 Dependencies:
 * [Vue.js 3](https://vuejs.org/)
 * [FontAwesome 5](https://fontawesome.com/)
-
-Dev Dependencies:
-* [Vue I18n](https://vue-i18n.intlify.dev/)
+* [Emailjs](https://www.emailjs.com/)
+* [TailwindCSS](https://tailwindcss.com/)
+* [TailwindUI](https://tailwindui.com/)
+* [TailwindCSS Forms](https://github.com/tailwindlabs/tailwindcss-forms)
+* [TailwindCSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)
+* [Axios](https://github.com/axios/axios)
+* [Vue Axios](https://www.npmjs.com/package/vue-axios)
+* [Vue i18n](https://github.com/kazupon/vue-i18n)
+* [Vue Router](https://github.com/vuejs/router)
 
 Other technologies I used:
 * [Visual Studio Code](https://code.visualstudio.com/)
