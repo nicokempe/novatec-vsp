@@ -1,0 +1,43 @@
+name: Build and Publish Docker Image
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build Docker image
+        uses: docker/build-push-action@v2.8.0
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ github.repository }}:${{ github.ref }}
+          build-args: |
+            VERSION=${{ github.ref }}
+            REPOSITORY=${{ github.repository }}
+        env:
+          DOCKER_USERNAME: ${{ github.actor }}
+          DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+          DOCKER_REGISTRY: ghcr.io
+
+      - name: Login to Docker registry
+        uses: docker/login-action@v2.0.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push Docker image to GitHub Packages
+        run: docker push ghcr.io/${{ github.repository }}:${{ github.ref }}
+        env:
+          DOCKER_USERNAME: ${{ github.actor }}
+          DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
