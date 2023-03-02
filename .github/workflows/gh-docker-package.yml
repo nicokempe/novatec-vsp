@@ -32,10 +32,10 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Push Docker image to GitHub Packages
         run: docker push ghcr.io/${{ github.repository }}:${{ github.ref }}
         env:
           DOCKER_USERNAME: ${{ github.actor }}
-          DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_TOKEN }}
