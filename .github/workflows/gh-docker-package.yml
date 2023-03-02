@@ -20,7 +20,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository }}:${{ github.ref }}
+          tags: ghcr.io/nicokempe/novatec-vsp:${{ github.ref }}
           build-args: |
             VERSION=${{ github.ref }}
             REPOSITORY=${{ github.repository }}
