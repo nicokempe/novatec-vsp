@@ -25,8 +25,6 @@ jobs:
             VERSION=${{ github.ref }}
             REPOSITORY=${{ github.repository }}
         env:
-          DOCKER_USERNAME: ${{ github.actor }}
-          DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
           DOCKER_REGISTRY: ghcr.io
 
       - name: Login to Docker registry
