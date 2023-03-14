@@ -23,7 +23,7 @@
     "@intlify/vue-i18n-loader": "^4.2.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7",
     "vue-cli-plugin-i18n": "~2.3.1"
