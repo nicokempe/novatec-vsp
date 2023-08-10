@@ -1,5 +1,5 @@
 # Base image for development
-FROM node:20.3.1-bullseye-slim@sha256:57ae74ffd7253c71b6e896ae585184d26446ba10e689a02921a1852d24d82d74 AS production
+FROM node:20.5.0-bullseye-slim@sha256:45dbc40906607e48873d26caa1a968f1a5187dd5e78e0e47205eea15393fd9c3 AS production
 
 # Create app directory
 WORKDIR /app
